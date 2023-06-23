@@ -1,0 +1,242 @@
+name: untitled1
+description: A new Flutter project.
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.2 <4.0.0'
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+  tab_container: ^2.0.0
+
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^2.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+   -  asset/Justdoghomepag.jpg
+   -  asset/img1-removebg-preview.png
+   -  asset/img2-removebg-preview.png
+   -  asset/img3-removebg-preview.png
+   -  asset/img4-removebg-preview.png
+   -  asset/img5-removebg-preview.png
+   -  asset/img6-removebg-preview.png
+   -  asset/img7-removebg-preview.png
+   -  asset/img8-removebg-preview.png
+   -  asset/img9-removebg-preview.png
+   -  asset/img10-removebg-preview.png
+   -  asset/cat1-removebg-preview.png
+   -  asset/cat2-removebg-preview (1).png
+   -  asset/cat3-removebg-preview.png
+   -  asset/cat4-removebg-preview.png
+   -  asset/cat5-removebg-preview.png
+   -  asset/cat6-removebg-preview.png
+   -  asset/cat7-removebg-preview.png
+   -  asset/cat7-removebg-preview (1).png
+   -  asset/cat9-removebg-preview.png
+   -  asset/cat10-removebg-preview.png
+   -  asset/cat11-removebg-preview.png
+   -  asset/farmina-removebg-preview.png
+   -  asset/dibag-removebg-preview (1).png
+   -  asset/acana-removebg-preview.png
+   -  asset/me-0-removebg-preview.png
+   -  asset/orijen-removebg-preview.png
+   -  asset/pedidree-removebg-preview.png
+   -  asset/Royalacanin-removebg-preview.png
+   -  asset/tasteofthe_wild-removebg-preview.png
+   -  asset/tempatations-removebg-preview.png
+   -  asset/whiskas-removebg-preview.png
+   -  asset/carpage.jpg
+   -  asset/secondimg.jpg
+   -  asset/google+-removebg-preview.png
+   -  asset/cutedog-removebg-preview.png
+   -  asset/cutcat-removebg-preview (1).png
+   -  asset/toysimg-removebg-preview.png
+   -  asset/hertimg-removebg-preview.png
+   -  asset/Deals-removebg-preview.png
+   -  asset/homemainimg-removebg-preview.png
+   -  asset/brand1.jpg
+   -  asset/brand2.jpg
+   -  asset/brand3.jpg
+   -  asset/brand4.jpg
+   -  asset/brand5.jpg
+   -  asset/brand6.jpg
+   -  asset/brand7.jpg
+   -  asset/brand8.jpg
+   -  asset/brand9.jpg
+   -  asset/brand10.jpg
+   -  asset/brand11.jpg
+   -  asset/brand12.jpg
+   -  asset/brand13.jpg
+   -  asset/brand15.jpg
+   -  asset/extraoff-removebg-preview.png
+   -  asset/ezrashopnow.jpg
+   -  asset/arrivals1.jpg
+   -  asset/arrivals2.jpg
+   -  asset/arrivals3.jpg
+   -  asset/arrivals4.jpg
+   -  asset/arrivals5.jpg
+   -  asset/arrivals6.jpg
+   -  asset/snakersshopnow.jpg
+   -  asset/bestseller1.jpg
+   -  asset/bestseller2.jpg
+   -  asset/bestseller3.jpg
+   -  asset/bestseller4.jpg
+   -  asset/bestseller5.jpg
+   -  asset/bestseller6.jpg
+   -  asset/blog1.jpg
+   -  asset/blog2.jpg
+   -  asset/blog3.jpg
+   -  asset/blog4.jpg
+   -  asset/blog5.jpg
+   -  asset/blog6.jpg
+   -  asset/unconditonaly.jpg
+   -  asset/dog1-removebg-preview.png
+   -  asset/dog2-removebg-preview.png
+   -  asset/dog3-removebg-preview.png
+   -  asset/dog4-removebg-preview.png
+   -  asset/dog5-removebg-preview.png
+   -  asset/dog6-removebg-preview.png
+   -  asset/dog7-removebg-preview.png
+   -  asset/dog8-removebg-preview.png
+   -  asset/dog9-removebg-preview.png
+   -  asset/dog10-removebg-preview.png
+   -  asset/dog11-removebg-preview.png
+   -  asset/dog12-removebg-preview.png
+   -  asset/dog14-removebg-preview.png
+   -  asset/dog15-removebg-preview.png
+   -  asset/dog16-removebg-preview.png
+   -  asset/dog17-removebg-preview.png
+   -  asset/dog18-removebg-preview.png
+   -  asset/dog19-removebg-preview.png
+   -  asset/catbreed1-removebg-preview.png
+   -  asset/catbreed2-removebg-preview.png
+   -  asset/catbreed3-removebg-preview.png
+   -  asset/catbreed4-removebg-preview.png
+   -  asset/catbreed5-removebg-preview.png
+   -  asset/catbreed6-removebg-preview.png
+   -  asset/doglifestyle1-removebg-preview.png
+   -  asset/doglifestyle2-removebg-preview.png
+   -  asset/doglifestyle3-removebg-preview.png
+   -  asset/doglifestyle4-removebg-preview.png
+   -  asset/doglifestyle5-removebg-preview.png
+   -  asset/doglifestyle6-removebg-preview.png
+   -  asset/catlifestage-removebg-preview.png
+   -  asset/catlifestage2-removebg-preview.png
+   -  asset/catlifestage3-removebg-preview.png
+   -  asset/whishhhhhhh.jpg
+   -  asset/herttticcoon-removebg-preview.png
+   -  asset/screensplash.jpg
+   -  asset/petlisting-removebg-preview (1).png
+   -  asset/orders-removebg-preview.png
+   -  asset/chrommgoogle-removebg-preview.png
+   -  asset/blog1homepage.jpg
+   -  asset/blogtwopage.jpg
+   -  asset/blogthreepage.jpg
+   -  asset/blogfourpage.jpg
+   -  asset/blogfive page.jpg
+   -  asset/blog6.jpg
+   -  asset/avatardogpage.jpg
+   -  asset/Clothingbathing.jpg
+   -  asset/grooming.jpg
+   -  asset/crates beds.jpg
+   -  asset/healthsupplement.jpg
+   -  asset/leash,coller.jpg
+   -  asset/toyspage.jpg
+   -  asset/food.jpg
+   -  asset/deals imgone.jpg
+   -  asset/deals_imgtwo-removebg-preview.png
+   -  asset/leg_raincoat-removebg-preview.png
+   -  asset/whiskasneww-removebg-preview (1).png
+   -  asset/puppyyyy.jpg
+   -  asset/Dog_Raincoat-removebg-preview.png
+   -  asset/redraincoat-removebg-preview.png
+   -  asset/toysimg-removebg-preview.png
+   -  asset/avatarfirtimg.jpg
+   -  asset/puppy_one-removebg-preview.png
+   -  asset/puppy_two-removebg-preview.png
+   -  asset/puppy_three-removebg-preview.png
+   -  asset/puppy_four-removebg-preview.png
+   -  asset/discovertoys-removebg-preview.png
+   -  asset/breed1.jpg
+   -  asset/breed2.jpg
+   -  asset/breed3.jpg
+   -  asset/breed4.jpg
+   -  asset/bookspa.jpg
+
+
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
