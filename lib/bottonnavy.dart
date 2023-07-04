@@ -2,10 +2,13 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:untitled1/Homepage.dart';
 import 'package:untitled1/Me.dart';
+import 'package:untitled1/tab.dart';
 import 'package:untitled1/wishlist.dart';
 
 import 'Shopage.dart';
 import 'cart.dart';
+import 'package:untitled1/tab.dart';
+
 
 class MyNavigationBar extends StatefulWidget {
   MyNavigationBar ({Key? key}) : super(key: key);
@@ -16,11 +19,11 @@ class MyNavigationBar extends StatefulWidget {
 
 class _MyNavigationBarState extends State<MyNavigationBar > {
   int _selectedIndex = 0;
-  static const List<Widget> _widgetOptions = <Widget>[
+  static  List<Widget> _widgetOptions = <Widget>[
 
    Homeee(),
     Wishh(),
-    Shopp(),
+   MyHomePage(),
     Me(),
     Cartt(),
 

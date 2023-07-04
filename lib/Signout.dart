@@ -11,7 +11,11 @@ class _SignnoutState extends State<Signnout> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+    body: Column(
+      children: [
 
+      ],
+    ),
     );
   }
 }

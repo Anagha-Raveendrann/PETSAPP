@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'Homepage.dart';
 import 'Signup.dart';
+import 'bottonnavy.dart';
 
 class Reggggtwo extends StatefulWidget {
   const Reggggtwo({Key? key}) : super(key: key);
@@ -171,7 +172,7 @@ class _ReggggtwoState extends State<Reggggtwo> {
             ),
           ),
              TextButton(onPressed: (){
-               Navigator.push(context, MaterialPageRoute(builder: (context)=>Five()));
+               Navigator.push(context, MaterialPageRoute(builder: (context)=>MyNavigationBar()));
              }, child: Text("Alredy have an account?"))
         ])
     )

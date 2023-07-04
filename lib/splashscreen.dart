@@ -15,45 +15,49 @@ class _OneState extends State<One> {
   void initState(){
 
     super.initState();
-    Timer(Duration(seconds: 4), () { Navigator.push(context, MaterialPageRoute(builder: (context)=>Two())); });
+    Timer(Duration(seconds: 8), () { Navigator.push(context, MaterialPageRoute(builder: (context)=>Two())); });
   }
   @override
   Widget build(BuildContext context) {
     return  MaterialApp(
-      theme: ThemeData(
-        primarySwatch: Colors.indigo,
-      ),
-      home: Scaffold(
-        backgroundColor: Colors.indigo,
-        body: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              // Row(
-              //   mainAxisAlignment: MainAxisAlignment.center,
-              //   children: [
-              //     Text('JUST DOGS',
-              //       style: TextStyle(color: Colors.white,fontSize: 50,fontWeight: FontWeight.bold,),
-              //     ),
-              //     SizedBox(width: 5,),
-              //     Container(
-              //       decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),
-              //           border: Border.all(color: Colors.white)
-              //       ),
-              //       child: Text('R',
-              //         style: TextStyle(color: Colors.white),
-              //       ),alignment: Alignment.center,
-              //       height: 20,
-              //       width: 20,
-              //     ),
-              //   ],
-              // ),
-              SizedBox(
-                width: 600,
-                height: 600,
-                child: Image.asset('asset/splashscreen.jpg',fit: BoxFit.fill,),
-              )
 
-            ]
+      color:  Color(0xff122DD3FF),
+      home: Scaffold(
+        backgroundColor: Color(0xff122DD3FF),
+        body: SingleChildScrollView(
+          child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                SizedBox(
+                  height: 10,
+                ),
+                // Row(
+                //   mainAxisAlignment: MainAxisAlignment.center,
+                //   children: [
+                //     Text('JUST DOGS',
+                //       style: TextStyle(color: Colors.white,fontSize: 45,fontWeight: FontWeight.bold,),
+                //     ),
+                //     SizedBox(width: 5,),
+                //     Container(
+                //       decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),
+                //           border: Border.all(color: Colors.white)
+                //       ),
+                //       child: Text('R',
+                //         style: TextStyle(color: Colors.white),
+                //       ),alignment: Alignment.center,
+                //       height: 20,
+                //       width: 20,
+                //     ),
+                //   ],
+                // ),
+                SizedBox(
+                  width: 400,
+                  height: 800,
+                  child: Image.asset('asset/pppppppp.jpg',fit: BoxFit.fill,),
+                )
+
+              ]
+          ),
         ),
       ),
       debugShowCheckedModeBanner: false,

@@ -1,672 +1,867 @@
-import 'package:flutter/material.dart';
+import 'dart:ui';
 
-class Cat_home extends StatefulWidget {
-  const Cat_home({Key? key}) : super(key: key);
+import 'package:flutter/material.dart';
+import 'package:untitled1/Groomingpage.dart';
+
+import 'Royalcalaninbrandpage.dart';
+import 'homepagetoy.dart';
+
+class Catavatr extends StatefulWidget {
+  const Catavatr({Key? key}) : super(key: key);
 
   @override
-  State<Cat_home> createState() => _Cat_homeState();
+  State<Catavatr> createState() => _CatavatrState();
 }
 
-class _Cat_homeState extends State<Cat_home> {
+class _CatavatrState extends State<Catavatr> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        title: Column(
-          children: [
-            Text('JUSTDOGS',style: TextStyle(color: Colors.indigoAccent,fontWeight: FontWeight.bold,fontSize: 25),),
+        appBar: AppBar(
+          backgroundColor: Colors.white,
+          title: Text('JUSTDOGS', style: TextStyle(color: Colors.indigoAccent,
+              fontWeight: FontWeight.bold,
+              fontSize: 25),),
 
-            Container(
-              decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),
-                  border: Border.all(color: Colors.white)
-              ),
-              child: Text('R',
-                style: TextStyle(color: Colors.white),
-              ),alignment: Alignment.center,
-              height: 20,
-              width: 20,
-            ),
-          ],
         ),
-        centerTitle: true,
-        leading: SizedBox(
-            height: 10,
-            width: 10,
-            child: Image.asset('asset/arrow-removebg-preview.png',color: Colors.grey,)),
-        actions: [
+        body: Center(
+            child: SingleChildScrollView(
+                child: Column(
+                    children: [
+                      Image.asset('asset/curiocitycat-removebg-preview.png'),
+                      Divider(),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 30.0, bottom: 30.0),
+                        child: Text('Shop by Category',
+                          style: TextStyle(color: Colors.black, fontSize: 25),),
+                      ),
+                      Column(
+                        children: [
 
-          Row(
-            children: [
-              Icon(Icons.search,color: Colors.black,),
-              SizedBox(
-                width: 10,
-              ),
-              Image.asset('asset/cart.png',height: 25,width: 25,)
-            ],
-          ),
-          // Row(
-          //   children: [
-          //     IconButton(onPressed: (){}, icon: Icon(Icons.search,color: Colors.black,)),
-          //
-          //
-          //   ],
-          // ),
+                          Padding(
+                            padding: const EdgeInsets.only(left: 20),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Column(
+                                  children: [
+                                    Row(
+                                      children: [
+                                        InkWell(
+                                          child: Container(
+                                            height: 75,
+                                            width: 75,
+                                            child: Image.asset(
+                                                'asset/catshop1.jpg'),
+                                            decoration: BoxDecoration(
+                                                borderRadius: BorderRadius
+                                                    .circular(30),
+                                                // gradient: LinearGradient(
+                                                //     begin: Alignment.topCenter,
+                                                //     end: Alignment.bottomCenter,
+                                                //     colors: [
+                                                //      Colors.lightBlueAccent
+                                                //          .shade100,
+                                                //       Colors.white])
+                                                     ),
+                                          ),
+                                          onTap: (){
+                                            Navigator.push(context,MaterialPageRoute(builder: (context)=>Homepagetoy()));
+                                          },
+                                        ),
+                                      ],
+                                    ),
+                                    Row(
+                                      children: [
+                                        Text('Bowls')
+                                      ],
+                                    ),
+                                    Row(
+                                      children: [
+                                        Text('& Feeders')
+                                      ],
+                                    ),
+
+                                  ],
+                                ),
 
 
+                                Padding(
+                                  padding: const EdgeInsets.only(left: 0),
+                                  child: Column(
+                                    children: [
+                                      Row(
+                                        children: [
+                                          InkWell(
+                                            child: Container(
+                                              height: 75,
+                                              width: 75,
+                                              child: Image.asset(
+                                                  'asset/catavatar2.jpg'),
+                                              decoration: BoxDecoration(
+                                                  borderRadius: BorderRadius
+                                                      .circular(30),
+                                                  // gradient: LinearGradient(
+                                                  //     begin: Alignment.topCenter,
+                                                  //     end: Alignment.bottomCenter,
+                                                  //     colors: [
+                                                  //       Colors.pinkAccent
+                                                  //           .shade100,
+                                                  //       Colors.white])
+                                              ),
+                                            ),
+                                            onTap: (){
+                                              Navigator.push(context,MaterialPageRoute(builder: (context)=>Homepagetoy()));
+                                            },
+                                          ),
+                                        ],
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.all(10.0),
+                                        child: Row(
+                                          children: [Text('Treats')],
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                ),
 
-        ],
-      ),
-      body: Center(
-          child: SingleChildScrollView(
-            child: Column(
-              children: [
-                Image.asset('asset/cat home.jpg'),
-                Divider(),
-                Padding(
-                  padding: const EdgeInsets.only(top: 30.0,bottom: 30.0),
-                  child: Text('Shop by Category',style: TextStyle(color: Colors.black,fontSize: 25),),
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Column(
-                      children: [
-                        Row(
+                                Padding(
+                                  padding: const EdgeInsets.only(right: 20),
+                                  child: Column(
+                                    children: [
+                                      Row(
+                                        children: [
+                                          InkWell(
+                                            child: Container(
+                                              height: 75,
+                                              width: 75,
+                                              child: Image.asset(
+                                                  'asset/catavatarhome3.jpg'),
+                                              decoration: BoxDecoration(
+                                                  borderRadius: BorderRadius
+                                                      .circular(30),
+                                                  // gradient: LinearGradient(
+                                                  //     begin: Alignment.topCenter,
+                                                  //     end: Alignment.bottomCenter,
+                                                  //     colors: [
+                                                  //       Colors.lightBlueAccent
+                                                  //           .shade100,
+                                                  //       Colors.white])
+                                              ),
+                                            ),
+                                            onTap: (){
+                                              Navigator.push(context,MaterialPageRoute(builder: (context)=>Homepagetoy()));
+                                            },
+                                          ),
+                                        ],
+                                      ),
+                                      Row(
+                                        children: [
+                                          Text('Toys')
+                                        ],
+                                      ),
+                                      Row(
+                                        children: [
+                                          Text('& Beds')
+                                        ],
+                                      )
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+
+                      Padding(
+                        padding: const EdgeInsets.only(left: 20),
+                        child: Column(
+                          children: [
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Column(
+                                  children: [
+                                    Row(
+                                      children: [
+                                        InkWell(
+                                          child: Container(
+                                            height: 75,
+                                            width: 75,
+                                            child: Image.asset(
+                                                'asset/grooming.jpg'),
+                                            decoration: BoxDecoration(
+                                                borderRadius: BorderRadius
+                                                    .circular(30),
+                                                // gradient: LinearGradient(
+                                                //     begin: Alignment.topCenter,
+                                                //     end: Alignment.bottomCenter,
+                                                //     colors: [
+                                                //       Colors.lightBlueAccent
+                                                //           .shade100,
+                                                //       Colors.white])
+                                            ),
+                                          ),
+                                          onTap: (){
+                                            Navigator.push(context,MaterialPageRoute(builder: (context)=>Groomingpage()));
+                                          },
+                                        ),
+                                      ],
+                                    ),
+                                    Row(
+                                      children: [
+                                        Text('Grooming')
+                                      ],
+                                    ),
+
+                                  ],
+                                ),
+
+
+                                Column(
+                                  children: [
+                                    Row(
+                                      children: [
+                                        InkWell(
+                                          child: Container(
+                                            height: 75,
+                                            width: 75,
+                                            child: Image.asset(
+                                                'asset/catavatarhome5.jpg'),
+                                            decoration: BoxDecoration(
+                                                borderRadius: BorderRadius
+                                                    .circular(30),
+                                                // gradient: LinearGradient(
+                                                //     begin: Alignment.topCenter,
+                                                //     end: Alignment.bottomCenter,
+                                                //     colors: [
+                                                //       Colors.pinkAccent.shade100,
+                                                //       Colors.white])
+                                            ),
+                                          ),
+                                          onTap: (){
+                                            Navigator.push(context,MaterialPageRoute(builder: (context)=>Homepagetoy()));
+                                          },
+                                        ),
+                                      ],
+                                    ),
+                                    Row(
+                                      children: [Text('Leash,Coller')],
+                                    ),
+                                    Row(
+                                      children: [
+                                        Text("& Harness")
+                                      ],
+                                    )
+                                  ],
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.only(right: 20),
+                                  child: Column(
+                                    children: [
+                                      Row(
+                                        children: [
+                                          InkWell(
+                                            child: Container(
+                                              height: 75,
+                                              width: 75,
+                                              child: Image.asset(
+                                                  'asset/catavatarhome6.jpg'),
+                                              decoration: BoxDecoration(
+                                                  borderRadius: BorderRadius
+                                                      .circular(30),
+                                                  // gradient: LinearGradient(
+                                                  //     begin: Alignment.topCenter,
+                                                  //     end: Alignment.bottomCenter,
+                                                  //     colors: [
+                                                  //       Colors.lightBlueAccent
+                                                  //           .shade100,
+                                                  //       Colors.white])
+
+                                              ),
+                                            ),
+                                            onTap: (){
+                                              Navigator.push(context,MaterialPageRoute(builder: (context)=>Homepagetoy()));
+                                            },
+                                          ),
+                                        ],
+                                      ),
+                                      Row(
+                                        children: [
+                                          Text('Litter &')
+                                        ],
+                                      ),
+                                      Row(
+                                        children: [
+                                          Text('Accessories')
+                                        ],
+                                      ),
+
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+
+                      Padding(
+                        padding: const EdgeInsets.only(left: 20),
+                        child: Column(
+                          children: [
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Column(
+                                  children: [
+                                    Row(
+                                      children: [
+                                        InkWell(
+                                          child: Container(
+                                            height: 75,
+                                            width: 75,
+                                            child: Image.asset(
+                                                'asset/catavatarhome7.jpg'),
+                                            decoration: BoxDecoration(
+                                                borderRadius: BorderRadius
+                                                    .circular(30),
+                                                // gradient: LinearGradient(
+                                                //     begin: Alignment.topCenter,
+                                                //     end: Alignment.bottomCenter,
+                                                //     colors: [
+                                                //       Colors.lightBlueAccent
+                                                //           .shade100,
+                                                //       Colors.white])),
+                                          ),
+                        ),
+                                          onTap: (){
+                                            Navigator.push(context,MaterialPageRoute(builder: (context)=>Homepagetoy()));
+                                          },
+                                        ),
+                                    ]),
+                                    Row(
+                                      children: [
+                                        Text('Food')
+                                      ],
+                                    ),
+
+                                  ],
+                                ),
+
+
+                                Column(
+                                  children: [
+                                    Row(
+                                      children: [
+                                        InkWell(
+                                          child: Container(
+                                            height: 75,
+                                            width: 75,
+                                            child: Image.asset(
+                                                'asset/catavatarhome8.jpg'),
+                                            decoration: BoxDecoration(
+                                                borderRadius: BorderRadius
+                                                    .circular(30),
+                                                // gradient: LinearGradient(
+                                                //     begin: Alignment.topCenter,
+                                                //     end: Alignment.bottomCenter,
+                                                //     colors: [
+                                                //       Colors.pinkAccent.shade100,
+                                                //       Colors.white])
+                                            ),
+                                          ),
+                                          onTap: (){
+                                            Navigator.push(context,MaterialPageRoute(builder: (context)=>Homepagetoy()));
+                                          },
+                                        ),
+                                      ],
+                                    ),
+                                    Row(
+                                      children: [Text('Health')],
+                                    ),
+                                    Row(
+                                      children: [
+                                        Text("Supplements")
+                                      ],
+                                    )
+                                  ],
+                                ),
+
+                                Padding(
+                                  padding: const EdgeInsets.only(right: 20),
+                                  child: Column(
+                                    children: [
+                                      Row(
+                                        children: [
+                                          InkWell(
+                                            child: Container(
+                                              height: 75,
+                                              width: 75,
+                                              child: Image.asset(
+                                                  'asset/catavatarhome9.jpg'),
+                                              decoration: BoxDecoration(
+                                                  borderRadius: BorderRadius
+                                                      .circular(30),
+                                                  // gradient: LinearGradient(
+                                                  //     begin: Alignment.topCenter,
+                                                  //     end: Alignment.bottomCenter,
+                                                  //     colors: [
+                                                  //       Colors.lightBlueAccent
+                                                  //           .shade100,
+                                                  //       Colors.white])
+                                              ),
+                                            ),
+                                            onTap: (){
+                                              Navigator.push(context,MaterialPageRoute(builder: (context)=>Homepagetoy()));
+                                            },
+                                          ),
+                                        ],
+                                      ),
+                                      Row(
+                                        children: [
+                                          Text('Scratcher')
+                                        ],
+                                      ),
+                                      Row(
+                                        children: [
+                                          Text('&Furniture')
+                                        ],
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+
+                     // ),
+                      Divider(),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 50.0, bottom: 50),
+                        child: InkWell(
+                          child: Image.asset(
+                              'asset/discovertoys-removebg-preview.png'),
+                        ),
+                      ),
+
+                      Padding(
+                        padding: const EdgeInsets.only(
+                            left: 30.0, bottom: 30.0),
+                        child: Text(
+                          'Shop  by  Breed', style: TextStyle(fontSize: 25),),
+                      ),
+
+                      SingleChildScrollView(scrollDirection: Axis.horizontal,
+                        child: Row(mainAxisAlignment: MainAxisAlignment
+                            .spaceBetween,
+                          children: [
+                            InkWell(
+                              child: Padding(
+                                padding: const EdgeInsets.all(20.0),
+                                child: Column(
+                                  children: [
+                                    Row(
+                                      children: [
+                                        Container(
+                                          height: 150,
+                                          width: 150,
+                                          decoration: BoxDecoration(
+                                            borderRadius: BorderRadius.circular(
+                                                50),),
+                                          child: Image.asset('asset/maine_coon-removebg-preview.png',
+                                            fit: BoxFit.fill,),
+                                        ),
+                                      ],
+                                    ),
+                                    Row(
+                                      children: [
+                                        Padding(
+                                          padding: const EdgeInsets.all(10.0),
+                                          child: Text('Maine Coon'),
+                                        )
+                                      ],
+                                    )
+                                  ],
+                                ),
+                              ),
+                              onTap: () {},
+                            ),
+                            InkWell(
+                              child: Padding(
+                                padding: const EdgeInsets.only(right: 20.0),
+                                child: Column(
+                                  children: [
+                                    Row(
+                                      children: [
+                                        Container(
+                                          height: 150,
+                                          width: 150,
+                                          decoration: BoxDecoration(
+                                            borderRadius: BorderRadius.circular(
+                                                50),),
+                                          child: Image.asset('asset/persian.jpg',
+                                            fit: BoxFit.fill,),
+                                        ),
+                                      ],
+                                    ),
+                                    Row(
+                                      children: [
+                                        Padding(
+                                          padding: const EdgeInsets.all(10.0),
+                                          child: Text('Persian'),
+                                        )
+                                      ],
+                                    )
+                                  ],
+                                ),
+                              ),
+                              onTap: () {},
+                            ),
+                            InkWell(
+                              child: Padding(
+                                padding: const EdgeInsets.only(right: 20.0),
+                                child: Column(
+                                  children: [
+                                    Row(
+                                      children: [
+                                        Container(
+                                          height: 150,
+                                          width: 150,
+                                          decoration: BoxDecoration(
+                                            borderRadius: BorderRadius.circular(
+                                                50),),
+                                          child: Image.asset('asset/indie.jpg',
+                                            fit: BoxFit.fill,),
+                                        ),
+                                      ],
+                                    ),
+                                    Row(
+                                      children: [
+                                        Padding(
+                                          padding: const EdgeInsets.all(10.0),
+                                          child: Text('Indie'),
+                                        )
+                                      ],
+                                    )
+                                  ],
+                                ),
+                              ),
+                              onTap: () {},
+                            ),
+                            InkWell(
+                              child: Padding(
+                                padding: const EdgeInsets.only(right: 20.0),
+                                child: Column(
+                                  children: [
+                                    Row(
+                                      children: [
+                                        Container(
+                                          height: 150,
+                                          width: 150,
+                                          decoration: BoxDecoration(
+                                            borderRadius: BorderRadius.circular(
+                                                50),),
+                                          child: Image.asset('asset/Himalayan.jpg',
+                                            fit: BoxFit.fill,),
+                                        ),
+                                      ],
+                                    ),
+                                    Row(
+                                      children: [
+                                        Padding(
+                                          padding: const EdgeInsets.all(10.0),
+                                          child: Text('Himalayan'),
+                                        )
+                                      ],
+                                    )
+                                  ],
+                                ),
+                              ),
+                              onTap: () {},
+                            ),
+                            InkWell(
+                              child: Padding(
+                                padding: const EdgeInsets.only(right: 20.0),
+                                child: Column(
+                                  children: [
+                                    Row(
+                                      children: [
+                                        Container(
+                                          height: 150,
+                                          width: 150,
+                                          decoration: BoxDecoration(
+                                            borderRadius: BorderRadius.circular(
+                                                50),),
+                                          child: Image.asset('asset/Siamese.jpg',
+                                            fit: BoxFit.fill,),
+                                        ),
+                                      ],
+                                    ),
+                                    Row(
+                                      children: [
+                                        Padding(
+                                          padding: const EdgeInsets.all(10.0),
+                                          child: Text('Siamese'),
+                                        )
+                                      ],
+                                    )
+                                  ],
+                                ),
+                              ),
+                              onTap: () {},
+                            )
+                          ],
+                        ),
+                      ),
+                      InkWell(
+                        child: Image.asset('asset/feeling good cat.jpg'),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 30.0, bottom: 30),
+                        child: Text(
+                          'Shop  by  Brands', style: TextStyle(fontSize: 25),),
+                      ),
+                      SingleChildScrollView(
+                        scrollDirection: Axis.horizontal,
+                        child: Row(
+                            children: [
+                              Column(
+                                children: [
+                                  InkWell(child: Image.asset(
+                                    'asset/brand1.jpg', width: 200,
+                                    height: 250,),
+                                    onTap: () {
+                                    setState(() {
+                                      Navigator.push(context, MaterialPageRoute(builder: (context)=>Royalcalanin()));
+                                    });
+                                    },
+                                  ),
+                                ],
+                              ),
+
+                              SizedBox(
+                                width: 5,
+                              ),
+                              Column(
+                                children: [
+                                  InkWell(child: Image.asset(
+                                      'asset/brand2.jpg', width: 200,
+                                      height: 250),
+                                    onTap: () {
+                                      Navigator.push(context, MaterialPageRoute(builder: (context)=>Royalcalanin()));
+                                    },
+                                  ),
+
+
+                                ],
+                              ),
+
+                              Column(
+                                children: [
+                                  InkWell(child: Image.asset(
+                                      'asset/brand3.jpg', width: 200,
+                                      height: 250),
+                                    onTap: () {
+                                      Navigator.push(context, MaterialPageRoute(builder: (context)=>Royalcalanin()));
+                                    },
+                                  ),
+
+
+                                ],
+                              ),
+                              Column(
+                                children: [
+                                  InkWell(child: Image.asset(
+                                      'asset/brand4.jpg', width: 200,
+                                      height: 250),
+                                    onTap: () {},
+                                  ),
+
+                                ],
+                              ),
+                              Column(
+                                children: [
+                                  InkWell(child: Image.asset(
+                                      'asset/brand5.jpg', width: 200,
+                                      height: 250),
+                                    onTap: () {
+
+                                    },
+                                  ),
+
+                                ],
+                              ),
+                              Column(
+                                children: [
+                                  InkWell(child: Image.asset(
+                                      'asset/brand6.jpg', width: 200,
+                                      height: 250),
+                                    onTap: () {
+
+                                    },
+                                  ),
+
+                                ],
+                              ),
+                              Column(
+                                children: [
+                                  InkWell(child: Image.asset(
+                                      'asset/brand7.jpg', width: 200,
+                                      height: 250),
+                                    onTap: () {
+
+                                    },
+                                  ),
+
+                                ],
+                              ),
+                              Column(
+                                children: [
+                                  InkWell(child: Image.asset(
+                                      'asset/brand8.jpg', width: 200,
+                                      height: 250),
+                                    onTap: () {
+
+                                    },
+                                  ),
+
+                                ],
+                              ),
+
+                              Column(
+                                children: [
+                                  InkWell(child: Image.asset(
+                                      'asset/brand9.jpg', width: 200,
+                                      height: 250),
+                                    onTap: () {
+                                      Navigator.push(context, MaterialPageRoute(builder: (context)=>Royalcalanin()));
+                                    },
+                                  ),
+
+                                ],
+                              ),
+                              Column(
+                                children: [
+                                  InkWell(child: Image.asset(
+                                      'asset/brand10.jpg', width: 200,
+                                      height: 250),
+                                    onTap: () {
+                                      Navigator.push(context, MaterialPageRoute(builder: (context)=>Royalcalanin()));
+                                    },
+                                  ),
+
+                                ],
+                              ),
+                              Column(
+                                children: [
+                                  InkWell(child: Image.asset(
+                                      'asset/brand11.jpg', width: 200,
+                                      height: 250),
+                                    onTap: () {
+                                      Navigator.push(context, MaterialPageRoute(builder: (context)=>Royalcalanin()));
+                                    },
+                                  ),
+
+                                ],
+                              ),
+                              Column(
+                                children: [
+                                  InkWell(child: Image.asset(
+                                      'asset/brand12.jpg', width: 200,
+                                      height: 250),
+                                    onTap: () {
+                                      Navigator.push(context, MaterialPageRoute(builder: (context)=>Royalcalanin()));
+                                    },
+                                  ),
+
+                                ],
+                              ),
+                              Column(
+                                children: [
+                                  InkWell(child: Image.asset(
+                                      'asset/brand13.jpg', width: 200,
+                                      height: 250),
+                                    onTap: () {
+                                      Navigator.push(context, MaterialPageRoute(builder: (context)=>Royalcalanin()));
+                                    },
+                                  ),
+
+                                ],
+                              ),
+                              Column(
+                                children: [
+                                  InkWell(child: Image.asset(
+                                      'asset/brand15.jpg', width: 200,
+                                      height: 250),
+                                    onTap: () {
+                                      Navigator.push(context, MaterialPageRoute(builder: (context)=>Royalcalanin()));
+                                    },
+                                  ),
+
+                                ],
+                              ),
+                            ]),
+                      ),
+                      InkWell(
+                        child: Row(
                           children: [
                             Padding(
-                              padding: const EdgeInsets.only(left: 10.0),
-                              child: Container(
-                                height: 120,
-                                width: 120,
-                                child: Image.asset('asset/bowl-removebg-preview.png'),
-                                decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),
-                                    gradient: LinearGradient(
-                                        begin: Alignment.topCenter,
-                                        end: Alignment.bottomCenter,
-                                        colors: [
-                                          Colors.lightBlueAccent.shade100,
-                                          Colors.white])),
-                              ),
-                            ),
+                              padding: const EdgeInsets.only(left: 40),
+                              child: Image.asset(
+                                'asset/extraoff-removebg-preview.png',
+                                height: 200, width: 280,),
+                            )
                           ],
                         ),
-                        Row(
-                          children: [
-                            Text('Bowls'),
-                          ],
-                        ),Row(
-                          children: [
-                            Text('& Feeders')
-                          ],
-                        )
-                      ],
-                    ),
+                        onTap: () {
+                          Navigator.push(context, MaterialPageRoute(builder: (context)=>Royalcalanin()));
+                        },
+                      ),
 
-
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Column(
-                      children: [
-                        Row(
-                          children: [
-                            Container(
-                              height: 120,
-                              width: 120,
-                              child: Image.asset('asset/bowl1-removebg-preview.png'),
-                              decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),
-                                  gradient: LinearGradient(
-                                      begin: Alignment.topCenter,
-                                      end: Alignment.bottomCenter,
-                                      colors: [
-                                        Colors.pinkAccent.shade100,
-                                        Colors.white])),
-                            ),
-                          ],
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.all(10.0),
-                          child: Row(
-                            children: [
-                              Text('Treats')
-                            ],
-                          ),
-                        )
-                      ],
-                    ),
-
-                    SizedBox(width: 10,),
-
-                    Padding(
-                      padding: const EdgeInsets.only(right: 10.0),
-                      child: Column(
+                      Column(mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Row(
-                            children: [
-                              Container(
-                                height: 120,
-                                width: 110,
-                                child: Image.asset('asset/bowl2-removebg-preview.png'),
-                                decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),
-                                    gradient: LinearGradient(
-                                        begin: Alignment.topCenter,
-                                        end: Alignment.bottomCenter,
-                                        colors: [
-                                          Colors.lightBlueAccent.shade100,
-                                          Colors.white])),
-                              ),
-                            ],
-                          ),
                           Padding(
-                            padding: const EdgeInsets.all(10.0),
+                            padding: const EdgeInsets.only(left: 40.0),
                             child: Row(
                               children: [
-                                Text('Toys')
+                                Text("Build your new pet's ",style: TextStyle(fontSize: 25,color: Colors.grey),),
                               ],
                             ),
-                          )
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(top: 20.0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Column(
-                        children: [
-                          Row(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.only(left: 10.0),
-                                child: Container(
-                                  height: 120,
-                                  width: 120,
-                                  child: Image.asset('asset/bowl3-removebg-preview.png'),
-                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),
-                                      gradient: LinearGradient(
-                                          begin: Alignment.topCenter,
-                                          end: Alignment.bottomCenter,
-                                          colors: [
-                                            Colors.greenAccent.shade100,
-                                            Colors.white])),
-                                ),
-                              ),
-                            ],
                           ),
                           Padding(
-                            padding: const EdgeInsets.all(10.0),
+                            padding: const EdgeInsets.only(left: 70.0),
                             child: Row(
                               children: [
-                                Text('Grooming')
+                                Text("Forever home!",style: TextStyle(fontSize: 25,color: Colors.grey),),
+                              //  Image.asset('asset/cat-face_1f431-removebg-preview.png',width: 150,)
                               ],
                             ),
-                          )
+                          ),
+
                         ],
                       ),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Column(
-                        children: [
-                          Row(
-                            children: [
-                              Container(
-                                height: 120,
-                                width: 120,
-                                child: Image.asset('asset/bowl4-removebg-preview.png'),
-                                decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),
-                                    gradient: LinearGradient(
-                                        begin: Alignment.topCenter,
-                                        end: Alignment.bottomCenter,
-                                        colors: [
-                                          Colors.redAccent.shade100,
-                                          Colors.white])),
-                              ),
-                            ],
-                          ),
-                          Row(
-                            children: [
-                              Text('Leash, Collar')
-                            ],
-                          ),
-                          Row(
-                            children: [
-                              Text('& Harness')
-                            ],
-                          )
-                        ],
-                      ),
-                      SizedBox(width: 10,),
-                      Padding(
-                        padding: const EdgeInsets.only(right: 10.0),
-                        child: Column(
-                          children: [
-                            Row(
-                              children: [
-                                Container(
-                                  height: 120,
-                                  width: 110,
-                                  child: Image.asset('asset/bowl5-removebg-preview.png'),
-                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),
-                                      gradient: LinearGradient(
-                                          begin: Alignment.topCenter,
-                                          end: Alignment.bottomCenter,
-                                          colors: [
-                                            Colors.purpleAccent.shade200,
-                                            Colors.white])),
-                                ),
-                              ],
-                            ),
-                            Row(
-                              children: [
-                                Text('Litter &')
-                              ],
-                            ),
-                            Row(
-                              children: [
-                                Text('Accessories')
-                              ],
-                            )
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(top: 20.0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.only(left: 10.0),
-                        child: Column(
-                          children: [
-                            Row(
-                              children: [
-                                Container(
-                                  height: 120,
-                                  width: 120,
-                                  child: Image.asset('asset/bowl6-removebg-preview.png'),
-                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),
-                                      gradient: LinearGradient(
-                                          begin: Alignment.topCenter,
-                                          end: Alignment.bottomCenter,
-                                          colors: [
-                                            Colors.purpleAccent.shade100,
-                                            Colors.white])),
-                                ),
-                              ],
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.all(10.0),
-                              child: Row(
-                                children: [
-                                  Text('Food')
-                                ],
-                              ),
-                            )
-                          ],
-                        ),
-                      ),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Column(
-                        children: [
-                          Row(
-                            children: [
-                              Container(
-                                height: 120,
-                                width: 120,
-                                child: Image.asset('asset/bowl7-removebg-preview.png'),
-                                decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),
-                                    gradient: LinearGradient(
-                                        begin: Alignment.topCenter,
-                                        end: Alignment.bottomCenter,
-                                        colors: [
-                                          Colors.greenAccent.shade100,
-                                          Colors.white])),
-                              ),
-                            ],
-                          ),
-                          Row(
-                            children: [
-                              Text('Health')
-                            ],
-                          ),
-                          Row(
-                            children: [
-                              Text('Supplements')
-                            ],
-                          )
-                        ],
-                      ),
-                      SizedBox(width: 10,),
-                      Padding(
-                        padding: const EdgeInsets.only(right: 10.0),
-                        child: Column(
-                          children: [
-                            Row(
-                              children: [
-                                Container(
-                                  height: 120,
-                                  width: 110,
-                                  child: Image.asset('asset/bowl8-removebg-preview.png'),
-                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),
-                                      gradient: LinearGradient(
-                                          begin: Alignment.topCenter,
-                                          end: Alignment.bottomCenter,
-                                          colors: [
-                                            Colors.lightBlueAccent.shade100,
-                                            Colors.white])),
-                                ),
-                              ],
-                            ),
-                            Row(
-                              children: [
-                                Text('Scratcher')
-                              ],
-                            ),
-                            Row(
-                              children: [
-                                Text('& Furniture')
-                              ],
-                            )
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-
-                Padding(
-                  padding: const EdgeInsets.only(top: 40.0),
-                  child: Image.asset('asset/off.jpg',width: 350,),
-                ),
-
-                Padding(
-                  padding: const EdgeInsets.only(top: 30.0,bottom: 30),
-                  child: Text('Shop by Life Stage',style: TextStyle(fontSize: 25),),
-                ),
-                Column(
-                  children: [
-                    Row(
-                      children: [
-                        Column(
-                          children: [
-                            Row(
-                              children: [
-                                Padding(
-                                  padding: const EdgeInsets.only(left: 30.0,right: 30.0),
-                                  child: InkWell(
-                                    child: Image.asset('asset/cat shop1.jpg',height: 150,width: 150,),
-                                  ),
-                                ),
-                              ],
-                            ),
-                            Row(
-                              children: [
-                                Padding(
-                                  padding: const EdgeInsets.all(10.0),
-                                  child: Text('Kitten'),
-                                )
-                              ],
-                            )
-                          ],
-                        ),
-                        Column(
-                          children: [
-                            Row(
-                              children: [
-                                InkWell(
-                                  child: Image.asset('asset/cat shop.jpg',height: 150,width: 150,),
-                                ),
-                              ],
-                            ),
-                            Row(
-                              children: [
-                                Padding(
-                                  padding: const EdgeInsets.all(10.0),
-                                  child: Text('Adult'),
-                                )
-                              ],
-                            )
-                          ],
-                        )
-                      ],
-                    )
-                  ],
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(20.0),
-                  child: Image.asset('asset/find.jpg'),
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(left: 30.0,bottom: 30.0),
-                  child: Text('Shop  by  breed',style: TextStyle(fontSize: 25),),
-                ),
-
-                SingleChildScrollView(scrollDirection: Axis.horizontal,
-                  child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
                       InkWell(
-                        child: Padding(
-                          padding: const EdgeInsets.all(20.0),
-                          child: Column(
-                            children: [
-                              Row(
-                                children: [
-                                  Container(
-                                    height: 150,
-                                    width: 150,
-                                    decoration: BoxDecoration(borderRadius: BorderRadius.circular(50),),
-                                    child: Image.asset('asset/cats1.jpg',fit: BoxFit.fill,),
-                                  ),
-                                ],
-                              ),
-                              Row(
-                                children: [
-                                  Padding(
-                                    padding: const EdgeInsets.all(10.0),
-                                    child: Text('Maine Coon'),
-                                  )
-                                ],
-                              )
-                            ],
-                          ),
-                        ),
-                        onTap: (){},
-                      ),
-                      InkWell(
-                        child: Padding(
-                          padding: const EdgeInsets.only(right: 20.0),
-                          child: Column(
-                            children: [
-                              Row(
-                                children: [
-                                  Container(
-                                    height: 150,
-                                    width: 150,
-                                    decoration: BoxDecoration(borderRadius: BorderRadius.circular(50),),
-                                    child: Image.asset('asset/cats2.jpg',fit: BoxFit.fill,),
-                                  ),
-                                ],
-                              ),
-                              Row(
-                                children: [
-                                  Padding(
-                                    padding: const EdgeInsets.all(10.0),
-                                    child: Text('Persian'),
-                                  )
-                                ],
-                              )
-                            ],
-                          ),
-                        ),
-                        onTap: (){},
-                      ),
-                      InkWell(
-                        child: Padding(
-                          padding: const EdgeInsets.only(right: 20.0),
-                          child: Column(
-                            children: [
-                              Row(
-                                children: [
-                                  Container(
-                                    height: 150,
-                                    width: 150,
-                                    decoration: BoxDecoration(borderRadius: BorderRadius.circular(50),),
-                                    child: Image.asset('asset/cats3.jpg',fit: BoxFit.fill,),
-                                  ),
-                                ],
-                              ),
-                              Row(
-                                children: [
-                                  Padding(
-                                    padding: const EdgeInsets.all(10.0),
-                                    child: Text('Indie'),
-                                  )
-                                ],
-                              )
-                            ],
-                          ),
-                        ),
-                        onTap: (){},
-                      ),
-                      InkWell(
-                        child: Padding(
-                          padding: const EdgeInsets.only(right: 20.0),
-                          child: Column(
-                            children: [
-                              Row(
-                                children: [
-                                  Container(
-                                    height: 150,
-                                    width: 150,
-                                    decoration: BoxDecoration(borderRadius: BorderRadius.circular(50),),
-                                    child: Image.asset('asset/cats4.jpg',fit: BoxFit.fill,),
-                                  ),
-                                ],
-                              ),
-                              Row(
-                                children: [
-                                  Padding(
-                                    padding: const EdgeInsets.all(10.0),
-                                    child: Text('Himalayan'),
-                                  )
-                                ],
-                              )
-                            ],
-                          ),
-                        ),
-                        onTap: (){},
-                      ),
-                      InkWell(
-                        child: Padding(
-                          padding: const EdgeInsets.only(right: 20.0),
-                          child: Column(
-                            children: [
-                              Row(
-                                children: [
-                                  Container(
-                                    height: 150,
-                                    width: 150,
-                                    decoration: BoxDecoration(borderRadius: BorderRadius.circular(50),),
-                                    child: Image.asset('asset/cats5.jpg',fit: BoxFit.fill,),
-                                  ),
-                                ],
-                              ),
-                              Row(
-                                children: [
-                                  Padding(
-                                    padding: const EdgeInsets.all(10.0),
-                                    child: Text('Siamese'),
-                                  )
-                                ],
-                              )
-                            ],
-                          ),
-                        ),
-                        onTap: (){},
-                      )
-                    ],
-                  ),
-                ),
-                InkWell(
-                  child: Image.asset('asset/goog food.jpg'),
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(top: 30.0,bottom: 30),
-                  child: Text('Shop  by  Brands',style: TextStyle(fontSize: 25),),
-                ),
-                SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
-                  child: Column(
-                    children: [
-                      Row(
-                        children: [
-                          InkWell(
-                            child: Image.asset('asset/shop product1.jpg',height: 200,width: 150,),
-                          ),
-                          InkWell(
-                            child: Image.asset('asset/shop product2.jpg',height: 200,width: 150,),
-                          ),
-                          InkWell(
-                            child: Image.asset('asset/shop product3.jpg',height: 200,width: 150,),
-                          ),
-                          InkWell(
-                            child: Image.asset('asset/shop product4.jpg',height: 200,width: 150,),
-                          ),
-                          InkWell(
-                            child: Image.asset('asset/shop product5.jpg',height: 200,width: 150,),
-                          ),
-                          InkWell(
-                            child: Image.asset('asset/shop product6.jpg',height: 200,width: 150,),
-                          ),
-                          InkWell(
-                            child: Image.asset('asset/shop product7.jpg',height: 200,width: 150,),
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(top: 50.0,bottom: 60.0),
-                  child: InkWell(
-                      child: Image.asset('asset/need help.jpg')),
-                ),
-                Text('Build your new pets',style: TextStyle(fontSize: 25,color: Colors.grey),),
-                Column(
-                  children: [
-                    Row(
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.only(left: 60.0,right: 10),
-                          child: Text('Forever home!',style: TextStyle(fontSize: 25,color: Colors.grey),),
-                        ),
-                        Image.asset('asset/forever.jpg',height: 30,width: 30,)
-                      ],
-                    ),
-                  ],
-                ),
-                InkWell(
-                  child: Padding(
-                    padding: const EdgeInsets.only(top: 20.0),
-                    child: Image.asset('asset/me-o.jpg'),
-                  ),
-                )
-              ],
-            ),
-          )
+                        child: Row(
+                          children: [
+                            Image.asset(
+                              'asset/meoooooo.jpg', height: 300, width: 360,)
+                          ],
 
-      ),
+                        ),
+                        onTap: () {
 
+                        },
+                      ),
+
+
+                    ])
+            )
+        )
 
     );
   }

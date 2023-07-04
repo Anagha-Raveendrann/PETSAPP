@@ -2,6 +2,10 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 
+import 'Clothingpag.dart';
+import 'Groomingpage.dart';
+import 'homepagetoy.dart';
+
 class Eight extends StatefulWidget {
   const Eight({Key? key}) : super(key: key);
 
@@ -26,16 +30,16 @@ class _EightState extends State<Eight> {
         //   height: 20,
         //   width: 20,
         // ),
-        centerTitle: true,
-        leading: Image.asset('asset/arrow-removebg-preview.png',color: Colors.grey,),
-        actions: [
-          IconButton(onPressed: (){}, icon: Icon(Icons.search)),
-          SizedBox(
-            width: 10,
-          ),
-          Image.asset('asset/cart.png',height: 30,width: 30,)
-
-        ],
+        // centerTitle: true,
+        // leading: Image.asset('asset/arrow-removebg-preview.png',color: Colors.grey,),
+        // actions: [
+        //   IconButton(onPressed: (){}, icon: Icon(Icons.search)),
+        //   SizedBox(
+        //     width: 10,
+        //   ),
+        //   Image.asset('asset/cart.png',height: 30,width: 30,)
+        //
+        // ],
       ),
       body: Center(
         child: SingleChildScrollView(
@@ -49,201 +53,351 @@ class _EightState extends State<Eight> {
                 ),
                 Column(
                   children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Column(
-                          children: [
-                            Row(
-                              children: [
-                                Container(
-                                  height: 120,
-                                  width: 120,
-                                  child: Image.asset('asset/Clothingbathing.jpg'),
-                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),
-                                      gradient: LinearGradient(
-                                          begin: Alignment.topCenter,
-                                          end: Alignment.bottomCenter,
-                                          colors: [
-                                            Colors.lightBlueAccent.shade100,
-                                            Colors.white])),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 20),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Column(
+                            children: [
+                              InkWell(
+                                child: Row(
+                                  children: [
+                                    Container(
+                                      height: 75,
+                                      width: 75,
+                                      child: Image.asset('asset/cloathing-removebg-preview.png'),
+                                      decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),
+                                          gradient: LinearGradient(
+                                              begin: Alignment.topCenter,
+                                              end: Alignment.bottomCenter,
+                                              colors: [
+                                                Colors.lightBlueAccent.shade100,
+                                                Colors.white])),
+                                    ),
+                                  ],
                                 ),
-                              ],
-                            ),
-                            Row(
-                              children: [
-                                Text('Clothing &')
-                              ],
-                            ),
-                            Row(
-                              children: [
-                                Text('Accessories')
-                              ],
-                            )
-                          ],
-                        ),
-
-
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Column(
-                          children: [
-                            Row(
-                              children: [
-                                Container(
-                                  height: 120,
-                                  width: 120,
-                                  child: Image.asset('asset/grooming.jpg'),
-                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),
-                                      gradient: LinearGradient(
-                                          begin: Alignment.topCenter,
-                                          end: Alignment.bottomCenter,
-                                          colors: [
-                                            Colors.pinkAccent.shade100,
-                                            Colors.white])),
-                                ),
-                              ],
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.all(10.0),
-                              child: Row(
-                                children: [Text('Grooming')],
+                                onTap: (){
+                                  Navigator.push(context,MaterialPageRoute(builder: (context)=>Clothingpage()));
+                                },
                               ),
-                            )
-                          ],
-                        ),
-                        SizedBox(width: 10,),
-                        Column(
-                          children: [
-                            Row(
+                              Row(
+                                children: [
+                                  Text('Clothing &')
+                                ],
+                              ),
+                              Row(
+                                children: [
+                                  Text('Accessories')
+                                ],
+                              )
+                            ],
+                          ),
+
+
+
+                          Padding(
+                            padding: const EdgeInsets.only(left: 0),
+                            child: Column(
                               children: [
-                                Container(
-                                  height: 120,
-                                  width: 120,
-                                  child: Image.asset('asset/crates beds.jpg'),
-                                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),
-                                      gradient: LinearGradient(
-                                          begin: Alignment.topCenter,
-                                          end: Alignment.bottomCenter,
-                                          colors: [
-                                            Colors.lightBlueAccent.shade100,
-                                            Colors.white])),
+                                InkWell(
+                                  onTap: (){
+                                    Navigator.push(context, MaterialPageRoute(builder: (context)=>Groomingpage()));
+                                  },
+                                  child: Row(
+                                    children: [
+                                      Container(
+                                        height: 75,
+                                        width: 75,
+                                        child: Image.asset('asset/grooming.jpg'),
+                                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),
+                                        )
+                                      ),
+                                    ],
+                                  ),
                                 ),
+                                Padding(
+                                  padding: const EdgeInsets.all(10.0),
+
+                                  child: Row(
+                                    children: [Text('Grooming')],
+                                  ),
+                                )
                               ],
                             ),
-                            Row(
+                          ),
+
+                          Padding(
+                            padding: const EdgeInsets.only(right: 20),
+                            child: Column(
                               children: [
-                                Text('Crates')
+                                InkWell(
+                                  onTap: (){
+                                    Navigator.push(context, MaterialPageRoute(builder: (context)=>Groomingpage()));
+                                  },
+                                  child: Row(
+                                    children: [
+                                      Container(
+                                        height: 75,
+                                        width: 75,
+                                        child: Image.asset('asset/crates_beds-removebg-preview.png'),
+                                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),
+                                            gradient: LinearGradient(
+                                                begin: Alignment.topCenter,
+                                                end: Alignment.bottomCenter,
+                                                colors: [
+                                                  Colors.lightBlueAccent.shade100,
+                                                  Colors.white])),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                Row(
+                                  children: [
+                                    Text('Crates')
+                                  ],
+                                ),
+                                Row(
+                                  children: [
+                                    Text('& Beds')
+                                  ],
+                                )
                               ],
                             ),
-                            Row(
-                              children: [
-                                Text('& Beds')
-                              ],
-                            )
-                          ],
-                        ),
-                      ],
+                          ),
+                        ],
+                      ),
                     ),
                   ],
                 ),
+
                 Padding(
-                  padding: const EdgeInsets.only(top: 20.0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  padding: const EdgeInsets.only(left: 20),
+                  child: Column(
                     children: [
-                      Container(
-                        height: 120,
-                        width: 120,
-                        child: Image.asset('asset/healthsupplement.jpg'),
-                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),
-                            gradient: LinearGradient(
-                                begin: Alignment.topCenter,
-                                end: Alignment.bottomCenter,
-                                colors: [
-                                  Colors.greenAccent.shade100,
-                                  Colors.white])),
-                      ),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Container(
-                        height: 120,
-                        width: 120,
-                        child: Image.asset('asset/shop5-removebg-preview.png'),
-                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),
-                            gradient: LinearGradient(
-                                begin: Alignment.topCenter,
-                                end: Alignment.bottomCenter,
-                                colors: [
-                                  Colors.redAccent.shade100,
-                                  Colors.white])),
-                      ),
-                      SizedBox(width: 10,),
-                      Container(
-                        height: 120,
-                        width: 120,
-                        child: Image.asset('asset/toysimg-removebg-preview.png'),
-                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),
-                            gradient: LinearGradient(
-                                begin: Alignment.topCenter,
-                                end: Alignment.bottomCenter,
-                                colors: [
-                                  Colors.purpleAccent.shade200,
-                                  Colors.white])),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Column(
+                            children: [
+                              Row(
+                                children: [
+                                  InkWell(
+                                    child: Container(
+                                      height: 75,
+                                      width: 75,
+                                      child: Image.asset('asset/healthsupplement-removebg-preview.png'),
+                                      decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),
+                                          gradient: LinearGradient(
+                                              begin: Alignment.topCenter,
+                                              end: Alignment.bottomCenter,
+                                              colors: [
+                                                Colors.lightBlueAccent.shade100,
+                                                Colors.white])),
+                                    ),
+                                    onTap: (){
+                                      Navigator.push(context, MaterialPageRoute(builder: (context)=>Groomingpage()));
+                                    },
+                                  ),
+                                ],
+                              ),
+                              Row(
+                                children: [
+                                  Text('Helath &')
+                                ],
+                              ),
+                              Row(
+                                children: [
+                                  Text('Supplements')
+                                ],
+                              )
+                            ],
+                          ),
+
+
+
+                          Column(
+                            children: [
+                              Row(
+                                children: [
+                                  InkWell(
+                                    child: Container(
+                                      height: 75,
+                                      width: 75,
+                                      child: Image.asset('asset/hennntoy-removebg-preview.png'),
+                                      decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),
+                                          gradient: LinearGradient(
+                                              begin: Alignment.topCenter,
+                                              end: Alignment.bottomCenter,
+                                              colors: [
+                                                Colors.pinkAccent.shade100,
+                                                Colors.white])),
+                                    ),
+                                    onTap: (){
+                                      Navigator.push(context, MaterialPageRoute(builder: (context)=>Homepagetoy()));
+                                    },
+                                  ),
+                                ],
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.all(10.0),
+                                child: Row(
+                                  children: [Text('Toys')],
+                                ),
+                              )
+                            ],
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(right: 20),
+                            child: Column(
+                              children: [
+                                Row(
+                                  children: [
+                                    Container(
+                                      height: 75,
+                                      width: 75,
+                                      child: Image.asset('asset/treatsss-removebg-preview.png'),
+                                      decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),
+                                          gradient: LinearGradient(
+                                              begin: Alignment.topCenter,
+                                              end: Alignment.bottomCenter,
+                                              colors: [
+                                                Colors.lightBlueAccent.shade100,
+                                                Colors.white])),
+                                    ),
+                                  ],
+                                ),
+                                Row(
+                                  children: [
+                                    Text('Treats')
+                                  ],
+                                ),
+
+                              ],
+                            ),
+                          ),
+                        ],
                       ),
                     ],
                   ),
                 ),
+
                 Padding(
-                  padding: const EdgeInsets.only(top: 20.0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  padding: const EdgeInsets.only(left: 20),
+                  child: Column(
                     children: [
-                      Container(
-                        height: 120,
-                        width: 120,
-                        child: Image.asset('asset/treates.jpg'),
-                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),
-                            gradient: LinearGradient(
-                                begin: Alignment.topCenter,
-                                end: Alignment.bottomCenter,
-                                colors: [
-                                  Colors.purpleAccent.shade100,
-                                  Colors.white])),
-                      ),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Container(
-                        height: 120,
-                        width: 120,
-                        child: Image.asset('asset/leash,coller.jpg'),
-                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),
-                            gradient: LinearGradient(
-                                begin: Alignment.topCenter,
-                                end: Alignment.bottomCenter,
-                                colors: [
-                                  Colors.greenAccent.shade100,
-                                  Colors.white])),
-                      ),
-                      SizedBox(width: 10,),
-                      Container(
-                        height: 120,
-                        width: 120,
-                        child: Image.asset('asset/food.jpg',),
-                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),
-                            gradient: LinearGradient(
-                                begin: Alignment.topCenter,
-                                end: Alignment.bottomCenter,
-                                colors: [
-                                  Colors.lightBlueAccent.shade100,
-                                  Colors.white])),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Column(
+                            children: [
+                              Row(
+                                children: [
+                                  InkWell(
+                                    child: Container(
+                                      height: 75,
+                                      width: 75,
+                                      child: Image.asset('asset/leash_coller-removebg-preview.png'),
+                                      decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),
+                                          gradient: LinearGradient(
+                                              begin: Alignment.topCenter,
+                                              end: Alignment.bottomCenter,
+                                              colors: [
+                                                Colors.lightBlueAccent.shade100,
+                                                Colors.white])),
+                                    ),
+                                    onTap: (){
+                                      Navigator.push(context, MaterialPageRoute(builder: (context)=>Groomingpage()));
+                                    },
+                                  ),
+                                ],
+                              ),
+                              Row(
+                                children: [
+                                  Text('Leash,Coller ')
+                                ],
+                              ),
+                              Row(
+                                children: [
+                                  Text('& Harness')
+                                ],
+                              )
+                            ],
+                          ),
+
+
+                          Column(
+                            children: [
+                              Row(
+                                children: [
+                                  InkWell(
+                                    child: Container(
+                                      height: 75,
+                                      width: 75,
+                                      child: Image.asset('asset/foood-removebg-preview.png'),
+                                      decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),
+                                          gradient: LinearGradient(
+                                              begin: Alignment.topCenter,
+                                              end: Alignment.bottomCenter,
+                                              colors: [
+                                                Colors.pinkAccent.shade100,
+                                                Colors.white])),
+                                    ),
+                                    onTap: (){
+                                      Navigator.push(context, MaterialPageRoute(builder: (context)=>Groomingpage()));
+                                    },
+                                  ),
+                                ],
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.all(10.0),
+                                child: Row(
+                                  children: [Text('Food')],
+                                ),
+                              )
+                            ],
+                          ),
+
+                          Padding(
+                            padding: const EdgeInsets.only(right: 20),
+                            child: Column(
+                              children: [
+                                Row(
+                                  children: [
+                                    InkWell(
+                                      child: Container(
+                                        height: 75,
+                                        width: 75,
+                                        child: Image.asset('asset/vegfood-removebg-preview.png'),
+                                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),
+                                            gradient: LinearGradient(
+                                                begin: Alignment.topCenter,
+                                                end: Alignment.bottomCenter,
+                                                colors: [
+                                                  Colors.lightBlueAccent.shade100,
+                                                  Colors.white])),
+                                      ),
+                                      onTap: (){
+                                        Navigator.push(context, MaterialPageRoute(builder: (context)=>Groomingpage()));
+                                      },
+                                    ),
+                                  ],
+                                ),
+                                Row(
+                                  children: [
+                                    Text('Veg Food')
+                                  ],
+                                ),
+
+                              ],
+                            ),
+                          ),
+                        ],
                       ),
                     ],
                   ),
                 ),
+
                 Divider(),
                 Padding(
                   padding: const EdgeInsets.only(top: 30.0,bottom: 30),
@@ -294,6 +448,7 @@ class _EightState extends State<Eight> {
                     )
                   ],
                 ),
+
                 Column(
                   children: [
                     Padding(
@@ -322,13 +477,15 @@ class _EightState extends State<Eight> {
                               ],
                             ),
                           ),
-
+                          SizedBox(
+                            width: 2,
+                          ),
                           Column(
                             children: [
                               Row(
                                 children: [
                                   InkWell(
-                                      child: Image.asset('asset/puppy_four-removebg-preview.png',height: 150,width: 150,)
+                                      child: Image.asset('asset/puppy_four-removebg-preview.png',height: 150,width: 140,)
 
                                   ),
                                 ],
@@ -343,6 +500,10 @@ class _EightState extends State<Eight> {
                     )
                   ],
                 ),
+                SizedBox(
+                  width: 2,
+                ),
+                Divider(),
                 Padding(
                   padding: const EdgeInsets.only(top: 50.0,bottom: 50),
                   child: InkWell(
@@ -369,7 +530,7 @@ class _EightState extends State<Eight> {
                                     height: 150,
                                     width: 150,
                                     decoration: BoxDecoration(borderRadius: BorderRadius.circular(50),),
-                                    child: Image.asset('asset/',fit: BoxFit.fill,),
+                                    child: Image.asset('asset/brred9.jpg',fit: BoxFit.fill,),
                                   ),
                                 ],
                               ),
@@ -680,43 +841,12 @@ class _EightState extends State<Eight> {
 
                   },
                 ),
-                Text("New Arrivals",style: TextStyle(fontSize: 20),),
-                SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
-                  child: Row(
-                      children: [
 
 
-                Padding(
-                  padding: const EdgeInsets.only(top: 50.0,bottom: 60.0),
-                  child: InkWell(
-                      child: Image.asset('asset/need help.jpg')),
-                ),
-                Text('Find everything your ',style: TextStyle(fontSize: 25,color: Colors.grey),),
-                Column(
-                  children: [
-                    Row(
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.only(left: 60.0,right: 10),
-                          child: Text('Fpet could dream of!',style: TextStyle(fontSize: 25,color: Colors.grey),),
-                        ),
-                        Image.asset('asset/forever.jpg',height: 30,width: 30,)
-                      ],
-                    ),
-                  ],
-                ),
-                InkWell(
-                  child: Padding(
-                    padding: const EdgeInsets.only(top: 20.0),
-                    child: Image.asset('aasset/snackers.jpg',height: 300,),
-                  ),
-                )
+     ] )
+    )
+    )
 
-              ]
-          ),
-        ),
-      ),
     );
   }
 }

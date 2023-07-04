@@ -4,7 +4,7 @@ import 'package:untitled1/petlisting.dart';
 import 'package:untitled1/secondpage.dart';
 import 'package:untitled1/splashscreen.dart';
 import 'package:untitled1/tab.dart';
-import 'package:untitled1/tabcontainer.dart';
+// import 'package:untitled1/tabcontainer.dart';
 
 
 import 'Avatardogpage.dart';
@@ -23,11 +23,14 @@ import 'Homepage.dart';
 import 'Me.dart';
 import 'Order and return.dart';
 import 'Register two.dart';
+import 'Shopage.dart';
 import 'Signup.dart';
-import 'Tabbarr.dart';
+
 import 'cart.dart';
 import 'catbreed.dart';
 import 'deals.dart';
+import 'fffffffff.dart';
+import 'homepagetoy.dart';
 import 'myaccount.dart';
 
 void main() {
@@ -59,10 +62,12 @@ class MyApp extends StatelessWidget {
         //
         // This works for code too, not just values: Most code changes can be
         // tested with just a hot reload.
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+
+        primarySwatch: Colors.blue,
         useMaterial3: true,
       ),
-      home:  Homeee(),
+      debugShowCheckedModeBanner: false,
+      home:  One(),
     );
   }
 }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'Signup.dart';
+import 'bottonnavy.dart';
 
 
 class Four extends StatefulWidget {
@@ -74,7 +75,7 @@ class _FourState extends State<Four> {
                           child: TextButton
                             (onPressed: (){
 
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>Five()));},
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>MyNavigationBar()));},
                               child: Text('skip',style: TextStyle(color: Colors.grey),)
                           ),
                         ),
@@ -82,7 +83,7 @@ class _FourState extends State<Four> {
                         Container(
                           child: ElevatedButton(
                             onPressed: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>Five()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>MyNavigationBar()));
                             },
                             child: Text('Next'),
 

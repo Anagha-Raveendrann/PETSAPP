@@ -112,7 +112,7 @@ class _DoggState extends State<Dogg> {
                       child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text("View All"),
-                          Image.asset('asset/img10-removebg-preview.png',),
+                          Image.asset('asset/img10-removebg-preview.png',width: 85,),
                         ],
                       ),
                     ),

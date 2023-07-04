@@ -11,36 +11,34 @@ class _AppsettingssState extends State<Appsettingss> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-   appBar: AppBar(
-     title: Text("App Settings"),
-     centerTitle: true,
-    leading: Icon(Icons.arrow_back_ios_outlined),
-   ),
-      body: Column(
-        children: [
-          ListTile(
-            leading: Text("App Settings",style: TextStyle(fontSize: 14)),
-            title:Text("EN",style: TextStyle(fontSize: 14)),
-            trailing: SizedBox(
-              child: Row(
-                children: [
-                  Icon(Icons.arrow_forward_ios)
-                ],
+        appBar: AppBar(
+          title: Text("App Settings"),
+          centerTitle: true,
+          leading: Icon(Icons.arrow_back_ios_outlined),
+        ),
+        body: Column(
+          children: [
+           ListTile(
+            title: Padding(
+              padding: const EdgeInsets.only(left: 135),
+              child: Text("EN"),
+            ),
+             leading: Text("Language",style: TextStyle(fontSize: 15),),
+             trailing: Icon(Icons.arrow_forward_ios,size: 15,),
+            ),
+            Divider(),
+            ListTile(
+              title: Padding(
+                padding: const EdgeInsets.only(left: 50),
+                child: Text("543698 bytes"),
               ),
-            )
-          ),
-    ListTile(
-    leading: Text("Clear  Cache",style: TextStyle(fontSize: 14)),
-    title:Text("481330 bytes",style: TextStyle(fontSize: 14)),
-    trailing: SizedBox(
-    child: Row(
-    children: [
-    Icon(Icons.arrow_forward_ios)
-    ],
-    ),
-    )
-    )],
-      ),
+              leading: Text("Clear cache",style: TextStyle(fontSize: 15),),
+              trailing: Icon(Icons.arrow_forward_ios,size: 15,),
+            ),
+            Divider(),
+          ],
+        )
+
     );
   }
 }

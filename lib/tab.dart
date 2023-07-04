@@ -1,17 +1,6 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(MyApp());
-}
 
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: MyHomePage(),
-    );
-  }
-}
 
 class MyHomePage extends StatefulWidget {
   @override
@@ -27,7 +16,7 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
     _tabController = TabController(length: 6, vsync: this);
   }
 
-  @override
+
 
 
   @override
@@ -38,9 +27,10 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
       ),
       body: Column(
         children: [
+          Image.asset('asset/Justdoghomepag.jpg',fit: BoxFit.fill,),
           TabBar(
             isScrollable: true, // Required
-            unselectedLabelColor: Colors.white30, // Other tabs color
+            unselectedLabelColor: Colors.black54, // Other tabs color
             labelPadding: EdgeInsets.symmetric(horizontal: 30), // Space between tabs
             indicator: UnderlineTabIndicator(
               borderSide: BorderSide(color: Colors.white, width: 2), // Indicator height
@@ -48,6 +38,7 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
             ),
             controller: _tabController,
             labelColor: Colors.black,
+
             tabs: [
               Tab(
                 text: 'DOG',
@@ -386,279 +377,6 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
                               ],
                             ),
                           ),
-                          Card(
-                            child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text("Beaphar"),
-                                Image.asset('asset/',width: 85,),
-                              ],
-                            ),
-                          ),
-                          Card(
-                            child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text("Arden Grange"),
-                                Image.asset('asset/cat11-removebg-preview.png',width: 85,),
-                              ],
-                            ),
-                          ),
-                          Card(
-                            child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text("Aroma Groom"),
-                                Image.asset('asset/cat11-removebg-preview.png',width: 85,),
-                              ],
-                            ),
-                          ),
-                          Card(
-                            child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text("Aroma Tree"),
-                                Image.asset('asset/cat11-removebg-preview.png',width: 85,),
-                              ],
-                            ),
-                          ),
-                          Card(
-                            child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text("Barkbutler"),
-                                Image.asset('asset/cat11-removebg-preview.png',width: 85,),
-                              ],
-                            ),
-                          ),
-                          Card(
-                            child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text("Wagg"),
-                                Image.asset('asset/cat11-removebg-preview.png',width: 85,),
-                              ],
-                            ),
-                          ),
-                          Card(
-                            child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text("Wanpy"),
-                                Image.asset('asset/cat11-removebg-preview.png',width: 85,),
-                              ],
-                            ),
-                          ),
-                          Card(
-                            child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text("Brit"),
-                                Image.asset('asset/cat11-removebg-preview.png',width: 85,),
-                              ],
-                            ),
-                          ),
-                          Card(
-                            child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text("Best Clean"),
-                                Image.asset('asset/cat11-removebg-preview.png',width: 85,),
-                              ],
-                            ),
-                          ),
-                          Card(
-                            child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text("Biogroom"),
-                                Image.asset('asset/cat11-removebg-preview.png',width: 85,),
-                              ],
-                            ),
-                          ),
-                          Card(
-                            child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text("Canes"),
-                                Image.asset('asset/cat11-removebg-preview.png',width: 85,),
-                              ],
-                            ),
-                          ),
-                          Card(
-                            child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text("Cesar"),
-                                Image.asset('asset/cat11-removebg-preview.png',width: 85,),
-                              ],
-                            ),
-                          ),
-                          Card(
-                            child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text("Chuckit"),
-                                Image.asset('asset/cat11-removebg-preview.png',width: 85,),
-                              ],
-                            ),
-                          ),
-                          Card(
-                            child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text("Creature Companion"),
-                                Image.asset('asset/cat11-removebg-preview.png',width: 85,),
-                              ],
-                            ),
-                          ),
-                          Card(
-                            child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text("Drools"),
-                                Image.asset('asset/cat11-removebg-preview.png',width: 85,),
-                              ],
-                            ),
-                          ),
-                          Card(
-                            child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text("Dogaholic"),
-                                Image.asset('asset/cat11-removebg-preview.png',width: 85,),
-                              ],
-                            ),
-                          ),
-                          Card(
-                            child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text("Cataholic"),
-                                Image.asset('asset/cat11-removebg-preview.png',width: 85,),
-                              ],
-                            ),
-                          ),
-                          Card(
-                            child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text("Fabled"),
-                                Image.asset('asset/cat11-removebg-preview.png',width: 85,),
-                              ],
-                            ),
-                          ),
-                          Card(
-                            child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text("Andis"),
-                                Image.asset('asset/cat11-removebg-preview.png',width: 85,),
-                              ],
-                            ),
-                          ),
-                          Card(
-                            child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text("Earthbath"),
-                                Image.asset('asset/cat11-removebg-preview.png',width: 85,),
-                              ],
-                            ),
-                          ),
-                          Card(
-                            child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text("Ezra"),
-                                Image.asset('asset/cat11-removebg-preview.png',width: 85,),
-                              ],
-                            ),
-                          ),
-                          Card(
-                            child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text("Flexi"),
-                                Image.asset('asset/cat11-removebg-preview.png',width: 85,),
-                              ],
-                            ),
-                          ),
-                          Card(
-                            child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text("Forbies"),
-                                Image.asset('asset/cat11-removebg-preview.png',width: 85,),
-                              ],
-                            ),
-                          ),
-                          Card(
-                            child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text("Fresh For Paws"),
-                                Image.asset('asset/cat11-removebg-preview.png',width: 85,),
-                              ],
-                            ),
-                          ),
-                          Card(
-                            child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text("GiGwi"),
-                                Image.asset('asset/cat11-removebg-preview.png',width: 85,),
-                              ],
-                            ),
-                          ),
-                          Card(
-                            child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text("Gnawlers"),
-                                Image.asset('asset/cat11-removebg-preview.png',width: 85,),
-                              ],
-                            ),
-                          ),
-                          Card(
-                            child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text("Goodies"),
-                                Image.asset('asset/cat11-removebg-preview.png',width: 85,),
-                              ],
-                            ),
-                          ),
-                          Card(
-                            child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text("Hills"),
-                                Image.asset('asset/cat11-removebg-preview.png',width: 85,),
-                              ],
-                            ),
-                          ),
-                          Card(
-                            child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text("Himalaya"),
-                                Image.asset('asset/cat11-removebg-preview.png',width: 85,),
-                              ],
-                            ),
-                          ),
-                          Card(
-                            child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text("Hydra"),
-                                Image.asset('asset/cat11-removebg-preview.png',width: 85,),
-                              ],
-                            ),
-                          ),
-                          Card(
-                            child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text("IAMS"),
-                                Image.asset('asset/cat11-removebg-preview.png',width: 85,),
-                              ],
-                            ),
-                          ),
-                          Card(
-                            child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text("jerHigh"),
-                                Image.asset('asset/cat11-removebg-preview.png',width: 85,),
-                              ],
-                            ),
-                          ),
-                          Card(
-                            child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text("Kittos"),
-                                Image.asset('asset/cat11-removebg-preview.png',width: 85,),
-                              ],
-                            ),
-                          ),
-                          Card(
-                            child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text("julius-k9"),
-                                Image.asset('asset/cat11-removebg-preview.png',width: 85,),
-                              ],
-                            ),
-                          ),
-
 
                         ],
                       ),
@@ -1115,37 +833,35 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
                   ),
                 ),
                 Container(
-                  child: Center(
-                    child: SingleChildScrollView(
-                      child: Column(
-                        children: [
-                          Card(
-                            child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text("Kitten"),
-                                Image.asset('asset/catlifestage-removebg-preview.png',width: 85,),
-                              ],
-                            ),
+                  child: SingleChildScrollView(
+                    child: Column(
+                      children: [
+                        Card(
+                          child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text("Kitten"),
+                              Image.asset('asset/catlifestage-removebg-preview.png',width: 85,),
+                            ],
                           ),
-                          Card(
-                            child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text("Adult"),
-                                Image.asset('asset/catlifestage2-removebg-preview.png',width: 85,),
-                              ],
-                            ),
+                        ),
+                        Card(
+                          child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text("Adult"),
+                              Image.asset('asset/catlifestage2-removebg-preview.png',width: 85,),
+                            ],
                           ),
-                          Card(
-                            child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text("View  All"),
-                                Image.asset('asset/catlifestage3-removebg-preview.png',width: 85,),
-                              ],
-                            ),
+                        ),
+                        Card(
+                          child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text("View  All"),
+                              Image.asset('asset/catlifestage3-removebg-preview.png',width: 85,),
+                            ],
                           ),
+                        ),
 
-                        ],
-                      ),
+                      ],
                     ),
                   ),
                 )

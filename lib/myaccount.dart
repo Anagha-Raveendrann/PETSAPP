@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'Editpage.dart';
+
 class Myacountt extends StatefulWidget {
   const Myacountt({Key? key}) : super(key: key);
 
@@ -21,33 +23,53 @@ class _MyacounttState extends State<Myacountt> {
       body: Column(
         children: [
 
-              ListTile(
-                title: Text("Edit Account"),
-                trailing:  Icon(Icons.arrow_forward_ios_rounded,size: 15,),
+              InkWell(
+                child: ListTile(
+                  title: Text("Edit Account"),
+                  trailing:  Icon(Icons.arrow_forward_ios_rounded,size: 15,),
+                ),
+                onTap: (){
+                  setState(() {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>Edittaccountt()));
+                  });
+                },
               ),
               Divider(),
-              ListTile(
-                title: Text("Change Password"),
-                trailing:  Icon(Icons.arrow_forward_ios_rounded,size: 15,),
+              InkWell(
+                onTap: (){},
+                child: ListTile(
+                  title: Text("Change Password"),
+                  trailing:  Icon(Icons.arrow_forward_ios_rounded,size: 15,),
+                ),
               ),
 
               Divider(),
-              ListTile(
+              InkWell(
+                onTap: (){},
+                child: ListTile(
 
-                title: Text("Billing Adress"),
-                trailing:  Icon(Icons.arrow_forward_ios_rounded,size: 15,),
+                  title: Text("Billing Adress"),
+                  trailing:  Icon(Icons.arrow_forward_ios_rounded,size: 15,),
 
+                ),
               ),
           Divider(),
-          ListTile(
-            title: Text("Shipping Adress"),
-            trailing:  Icon(Icons.arrow_forward_ios_rounded,size: 15,),
+          InkWell(
+            onTap: (){},
+            child: ListTile(
+              title: Text("Shipping Adress"),
+              trailing:  Icon(Icons.arrow_forward_ios_rounded,size: 15,),
+            ),
           ),
           Divider(),
-          ListTile(
-            title: Text("Delete account"),
-            trailing:  Icon(Icons.arrow_forward_ios_rounded,size: 15,),
+          InkWell(
+            onTap: (){},
+            child: ListTile(
+              title: Text("Delete account"),
+              trailing:  Icon(Icons.arrow_forward_ios_rounded,size: 15,),
+            ),
           ),
+          Divider(),
             ],
           )
 

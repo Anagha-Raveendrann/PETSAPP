@@ -6,6 +6,7 @@ import 'Appsettings.dart';
 import 'Help info.dart';
 import 'Order and return.dart';
 import 'Signout.dart';
+import 'Signup.dart';
 import 'myaccount.dart';
 
 class Me extends StatefulWidget {
@@ -53,7 +54,7 @@ class _MeState extends State<Me> {
             ),
             Padding(
               padding: const EdgeInsets.only(right: 200),
-              child: Text("Information",style: TextStyle(fontSize: 15),),
+              child: Text("Information",style: TextStyle(fontSize: 20),),
             ),
 
             ListTile(
@@ -99,7 +100,7 @@ class _MeState extends State<Me> {
 
             Padding(
               padding: const EdgeInsets.only(right: 200),
-              child: Text("Settings",style: TextStyle(fontSize: 15),),
+              child: Text("Settings",style: TextStyle(fontSize: 20),),
             ),
             Divider(),
 
@@ -124,7 +125,7 @@ class _MeState extends State<Me> {
             Divider(),
             ListTile(
               onTap: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context)=>Signnout()));
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>Five()));
               },
               leading: Icon(Icons.arrow_circle_right_outlined,size: 15,),
               title: Text("Sign Out",style: TextStyle(fontSize: 14)),
